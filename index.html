@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+         rel="stylesheet">
+      <script src="https://kit.fontawesome.com/7eb66d378c.js" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <div class="wrapper">
+          <div class="paratxt">
+            <p class="logbtn" id="log">Login</p>
+            <p class="signbtn" id="sig">Sign Up</p>
+          </div>
+         <div class="login">
+            <i class="fas fa-user-circle"></i><br>
+            <input type="password" placeholder="Password" id="pass">
+            <i class="show-pass fa fa-eye fa-lg"></i>
+         </div>
+         <div class="signup">
+            <img src="png/pic.jpg" alt="pic" width="73px">
+         </div>
+         <div class="footer">
+         <p>Login with</p>
+         <ul class="flex-container space-evenly">
+            <li class="flex-item"> <img src="png/googleplus.png" alt="google plus"></li>
+            <li class="flex-item"> <img src="png/github.png" alt="git"></li>
+            <li class="flex-item"> <img src="png/twitter.png" alt="twitter"></li>
+            <li class="flex-item"> <img src="png/facebook.png" alt="fb"></li>
+         </ul>
+      </div>
+      </div>
+   </body>
+   <script>
+      var passField = $('input[type=password]');
+      $('.show-pass').hover(function () {
+          passField.attr('type', 'text');
+      }, function () {
+          passField.attr('type', 'password');
+      })
+      
+      $(document).ready(function () {
+      
+          $(".logbtn").click(function () {
+             $(".signup").hide();
+             $(".login").show();
+              size = 35;
+              $("#log").css("font-size", size + "px");
+              $("#log").css("color", '#000000');
+              size2 = 20;
+              $("#sig").css("font-size", size2 + "px");
+              $("#sig").css("color", '	#A9A9A9');
+              weight = 900;
+              $('#log').css("font-weight", weight);
+              weight2 = 400;
+              $('#sig').css("font-weight", weight2);
+              top1=24;
+              $('#sig').css("top",top1+"px");
+              top2=0;
+              $('#log').css("top",top2+"px");
+              ord2=1;
+              $('#sig').css("order",ord2);
+              ord3=0;
+              $('#log').css("order",ord3);
+              return false;
+          });
+      
+          $(".signbtn").click(function () {
+            $(".login").hide();
+            $(".signup").show();
+              size = 35;
+              $("#sig").css("font-size", size + "px");
+              $("#log").css("color", '	#A9A9A9');
+              size2 = 20;
+              $("#log").css("font-size", size2 + "px");
+              $("#sig").css("color", '#000000');
+              weight = 900;
+              $('#sig').css("font-weight", weight);
+              weight2 = 400;
+              $('#log').css("font-weight", weight2);
+              top2=24;
+              $('#log').css("top",top2+"px");
+              top3=0;
+              $('#sig').css("top",top3+"px");
+              ord=0;
+              $('#sig').css("order",ord);
+              ord1=1;
+              $('#log').css("order",ord1);
+              return false;
+          });
+      
+      });
+   </script>
+</html>
