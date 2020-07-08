@@ -23,19 +23,25 @@
            <input type="email" name="email" id="mail" autocomplete="off" placeholder="Username or email address"><br>
             <input type="password" class="show-pass fa" placeholder="Password                      &#xf06e" id="pass">
             <br><button class="logbutton"><i class="fa fa-check"></i>    LOG IN</button>
+            <div class="footer">
+               <p class="foot_txt">Login with</p>
+               <ul class="flex-container space-evenly">
+                  <li class="flex-item"><a href="#"> <img src="png/googleplus.png" alt="google plus"></a></li>
+                  <li class="flex-item"><a href="#"> <img src="png/github.png" alt="git"></a></li>
+                  <li class="flex-item"> <a href="#"><img src="png/twitter.png" alt="twitter"></a></li>
+                  <li class="flex-item"> <a href="#"><img src="png/facebook.png" alt="fb"></a></li>
+               </ul>
+            </div>
          </div>
          <div class="signup">
-            <img src="png/pic.jpg" alt="pic" width="73px">
+            <img src="png/pic.jpg" alt="pic" width="73px"><br>
+            <input type="email" name="email" id="mail" class="signmail" autocomplete="off" placeholder="Email address"><br>
+            <input type="email" name="email" id="mail" class="signuser" autocomplete="off" placeholder="Username"><br>
+            <input type="password" class="show-pass signpass fa" placeholder="Password                      &#xf06e" id="pass"><br>
+            <input type="password" class="show-pass1 signpass fa" placeholder="Repeat Password          &#xf06e" id="pass">
+            <br><button class="logbutton"><i class="fa fa-check"></i>    SIGN UP</button>
+            <p class="foot_txt">Terms of Service</p>
          </div>
-         <div class="footer">
-         <p class="foot_txt">Login with</p>
-         <ul class="flex-container space-evenly">
-            <li class="flex-item"><a href="#"> <img src="png/googleplus.png" alt="google plus"></a></li>
-            <li class="flex-item"><a href="#"> <img src="png/github.png" alt="git"></a></li>
-            <li class="flex-item"> <a href="#"><img src="png/twitter.png" alt="twitter"></a></li>
-            <li class="flex-item"> <a href="#"><img src="png/facebook.png" alt="fb"></a></li>
-         </ul>
-      </div>
       </div>
    </body>
    <script>
@@ -44,7 +50,13 @@
           passField.attr('type', 'text');
       }, function () {
           passField.attr('type', 'password');
-      })
+      });
+
+      $('.show-pass1').hover(function(){
+passField.attr('type','text');
+      },function(){
+         passField.attr('type','password');
+      });
       
       $(document).ready(function () {
       
