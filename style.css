@@ -18,7 +18,7 @@ body {
     font-weight: 400;
     text-align: center;
     position: relative;
-    top:0px;
+    top:24px;
     color: darkgray;
 }
 
@@ -29,28 +29,68 @@ body {
 	font-weight: 900;
     text-align: center;
     position: relative;
-    top: 24px;
+    top: 0px;
+}
+
+i.fa.fa-check {
+    font-size: 20px;
+    font-weight: lighter;
 }
 
 input#pass {
     border: none;
     padding-bottom: 7px;
     border-bottom: 1px solid darkgray;
+    width: 170px;
 }
 
 input#mail {
     border: none;
     padding-bottom: 7px;
     border-bottom: 1px solid darkgray;
-    width: 177px;
+    width: 170px;
 }
 
 .login{
     text-align: center;
 }
 
+p.foot_txt {
+    color: darkgray;
+font-size: 14px;
+}
+
+ul.flex-container.space-evenly {
+    padding-left: 36px;
+}
+
+button.logbutton:hover {
+    color: white;
+    background-color: #5C6BC0;
+}
+
+.logbutton {
+    font-size: 20px;
+    margin-top: 67px;
+    border-radius: 30px;
+    width: 178px;
+    color: #5C6BC0;
+    height: 37px;
+    margin-bottom: 34px;
+    margin-left: 10px;
+    border-style: none;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 1px 8px 14px #aaaaaa;
+}
+
+input#mail:active:focus {
+    box-shadow: 0px 0px 5px 0px gray;
+  }
+
 .signup{
     text-align: center;
+    display: none;
 }
 
 .footer{

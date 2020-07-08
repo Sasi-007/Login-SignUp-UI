@@ -20,19 +20,20 @@
           </div>
          <div class="login">
             <i class="fas fa-user-circle"></i><br>
-           <input type="email" name="email" id="mail" placeholder="Username or email address"><br>
-            <input type="password" class="fa" placeholder="Password                        &#xf06e" id="pass">
+           <input type="email" name="email" id="mail" autocomplete="off" placeholder="Username or email address"><br>
+            <input type="password" class="show-pass fa" placeholder="Password                      &#xf06e" id="pass">
+            <br><button class="logbutton"><i class="fa fa-check"></i>    LOG IN</button>
          </div>
          <div class="signup">
             <img src="png/pic.jpg" alt="pic" width="73px">
          </div>
          <div class="footer">
-         <p>Login with</p>
+         <p class="foot_txt">Login with</p>
          <ul class="flex-container space-evenly">
-            <li class="flex-item"> <img src="png/googleplus.png" alt="google plus"></li>
-            <li class="flex-item"> <img src="png/github.png" alt="git"></li>
-            <li class="flex-item"> <img src="png/twitter.png" alt="twitter"></li>
-            <li class="flex-item"> <img src="png/facebook.png" alt="fb"></li>
+            <li class="flex-item"><a href="#"> <img src="png/googleplus.png" alt="google plus"></a></li>
+            <li class="flex-item"><a href="#"> <img src="png/github.png" alt="git"></a></li>
+            <li class="flex-item"> <a href="#"><img src="png/twitter.png" alt="twitter"></a></li>
+            <li class="flex-item"> <a href="#"><img src="png/facebook.png" alt="fb"></a></li>
          </ul>
       </div>
       </div>
@@ -94,7 +95,7 @@
               $('#log').css("order",ord1);
               return false;
           });
-      
+
       });
    </script>
 </html>
